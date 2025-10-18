@@ -4,231 +4,118 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Dự án - MinHuynnn Profile</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #0f1724;
-            --card: #0b1220;
-            --muted: #a6b0bf;
-            --accent: #56b6f9;
-            --glass: rgba(255, 255, 255, 0.04);
-            --radius: 16px;
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-        }
-
-        body {
-            margin: 0;
-            color: #e6eef8;
-            background: radial-gradient(circle at 20% 30%, rgba(88, 0, 255, 0.3), transparent 40%),
-                radial-gradient(circle at 80% 40%, rgba(255, 0, 180, 0.3), transparent 40%),
-                radial-gradient(circle at 40% 80%, rgba(0, 255, 255, 0.2), transparent 40%),
-                linear-gradient(180deg, #071022 0%, #081428 60%);
-            background-attachment: fixed;
-            animation: moveGalaxy 20s ease-in-out infinite alternate;
-            background-size: 200% 200%;
-            min-height: 100vh;
-            padding: 36px 18px;
-        }
-
-        @keyframes moveGalaxy {
-            0% {
-                background-position: 0% 0%, 50% 50%, 100% 100%;
-            }
-
-            50% {
-                background-position: 100% 100%, 0% 50%, 50% 0%;
-            }
-
-            100% {
-                background-position: 0% 0%, 50% 50%, 100% 100%;
-            }
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 40px;
-            max-width: 1100px;
-            margin-inline: auto;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .mark {
-            width: 48px;
-            height: 48px;
-            border-radius: 10px;
-            background: linear-gradient(135deg, var(--accent), #7de3ff);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #042137;
-            font-weight: 700;
-        }
-
-        nav a {
-            color: var(--muted);
-            text-decoration: none;
-            font-weight: 600;
-            margin-left: 18px;
-        }
-
-        nav a:hover,
-        nav a[aria-current="page"] {
-            color: var(--accent);
-        }
-
-        .container {
-            max-width: 1100px;
-            margin-inline: auto;
-        }
-
-        .project-card {
-            display: flex;
-            align-items: center;
-            background: var(--card);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 24px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
-        }
-
-        .project-card img {
-            width: 320px;
-            height: 200px;
-            border-radius: 12px;
-            object-fit: cover;
-            margin-right: 24px;
-            display: block;
-        }
-
-        .project-card img.portrait {
-            height: auto;
-            aspect-ratio: 9 / 16;
-            object-fit: contain;
-            background: linear-gradient(120deg, #dbeafe, #eff6ff);
-            padding: 16px 12px;
-            box-sizing: border-box;
-        }
-
-        .project-info h2 {
-            margin: 0;
-            font-size: 22px;
-            color: var(--accent);
-        }
-
-        .project-info p {
-            margin-top: 8px;
-            color: var(--muted);
-            line-height: 1.6;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 12px;
-            background: var(--accent);
-            color: #042137;
-            padding: 8px 14px;
-            border-radius: 10px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #7de3ff;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        @media (max-width:768px) {
-            .project-card {
-                flex-direction: column;
-            }
-
-            .project-card img {
-                margin-right: 0;
-                margin-bottom: 12px;
-                width: 100%;
-                height: auto;
-            }
-        }
-    </style>
+    <title>Du an - MinHuynnn Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <div class="mark">MH</div>
-            <div>
-                <div style="font-weight:700">MinHuynnn</div>
-                <div style="color:var(--muted);font-size:13px">Frontend Developer</div>
+    <div class="particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="page-layout">
+        <aside class="sidebar card">
+            <div class="brand">
+                <div class="logo">H</div>
+                <div>
+                    <div class="title">MinHuynnn Profile</div>
+                    <div class="kicker">Du an</div>
+                </div>
             </div>
+            <nav class="icon-nav">
+                <a href="index.html" class="nav-icon" aria-label="Trang chu" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5.5a.5.5 0 0 1-.5-.5V15h-4v6.5a.5.5 0 0 1-.5.5H4a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <span class="sr-only">Trang chu</span>
+                </a>
+                <a href="projects.html" class="nav-icon active" aria-label="Du an" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M4.5 5.5A2.5 2.5 0 0 1 7 3h10a2.5 2.5 0 0 1 2.5 2.5V7H21a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1h.5zm13 0V7h-11V5.5A.5.5 0 0 1 7 5h10a.5.5 0 0 1 .5.5z" />
+                    </svg>
+                    <span class="sr-only">Du an</span>
+                </a>
+                <a href="contact.html" class="nav-icon" aria-label="Lien he" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 1.6v.27l8 5 8-5V6.6l-8 5-8-5z" />
+                    </svg>
+                    <span class="sr-only">Lien he</span>
+                </a>
+                <a href="#tiles" class="nav-icon nav-icon-cta" aria-label="Xem danh sach du an" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2a1 1 0 0 1 .95.68l1.37 4.22 4.44.07a1 1 0 0 1 .59 1.8l-3.56 2.68 1.3 4.28a1 1 0 0 1-1.52 1.1L12 14.9l-3.57 2.93a1 1 0 0 1-1.52-1.1l1.3-4.28-3.56-2.68a1 1 0 0 1 .59-1.8l4.44-.07 1.37-4.22A1 1 0 0 1 12 2z" />
+                    </svg>
+                    <span class="sr-only">Xem du an</span>
+                </a>
+            </nav>
+        </aside>
+
+        <div class="content-area">
+            <main class="card projects-main">
+                <h1 class="projects-heading">Project</h1>
+
+            <section class="project-spotlight" id="stusmart">
+                <div class="spotlight-media">
+                    <img src="images/stusmart.jpg" alt="StuSmart">
+                </div>
+                <div class="spotlight-info">
+                    <h2>StuSmart - Ứng dụng điểm danh</h2>
+                    <p>StuSmart là ứng dụng quản lý học sinh, hỗ trợ điểm danh, gửi bài tập, nhập điểm và quản lý thông tin học sinh
+                        & giáo viên.</p>
+                    <a href="https://github.com/MinHuynnn/StuSmart.app" class="btn" target="_blank">Xem chi tiết</a>
+                </div>
+            </section>
+            
+            <section class="project-tiles" id="tiles">
+                <article class="project-tile" id="portfolio">
+                    <div class="tile-media">
+                        <img src="images/keobuabao.jpg"
+                            alt="Portfolio">
+                    </div>
+                    <h3>Game-Rocks-Paper-Scissors</h3>
+                    <p>Website giới thiệu bản thân, kỹ năng và dự án. Thiết kế phong cách galaxy với hiệu ứng chuyển động, tối ưu
+                        cho cả desktop và mobile.</p>
+                    <a href="https://github.com/MinHuynnn/Game-Rocks-Paper-Scissors" class="btn" target="_blank">Xem chi tiết</a>
+                </article>
+            
+                <article class="project-tile" id="smarttasks">
+                    <div class="tile-media">
+                        <img src="images/chatapp.jpg"
+                            alt="Ứng Dụng Chat">
+                    </div>
+                    <h3>Ứng Dụng Chat</h3>
+                    <p>Ứng dụng quản lý bài tập cho sinh viên UTH sử dụng Jetpack Compose. Bao gồm nhắc nhở deadline, ghi chú và
+                        đồng bộ dữ liệu.</p>
+                    <a href="https://github.com/MinHuynnn/Chat-Box" class="btn" target="_blank">Xem chi tiết</a>
+                </article>
+            
+                <article class="project-tile" id="stusmart-web">
+                    <div class="tile-media">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                            alt="StuSmart Web">
+                    </div>
+                    <h3>StuSmart Web</h3>
+                    <p>Bảng điều khiển web hỗ trợ quản lý lớp, thống kê buổi học và xuất báo cáo theo kỳ. Tích hợp biểu đồ realtime
+                        và đăng nhập phân quyền.</p>
+                    <a href="https://github.com/MinHuynnn/StuSmart" class="btn" target="_blank">Xem chi tiết</a>
+                </article>
+            </section>
+
+            </main>
+
+            <footer class="footer card">
+                &copy; 2025 MinHuynnn
+            </footer>
         </div>
-        <nav>
-            <a href="index.html">Trang chủ</a>
-            <a href="projects.html" aria-current="page">Dự án</a>
-            <a href="contact.html">Liên hệ</a>
-        </nav>
-    </header>
+    </div>
 
-    <main class="container">
-        <h1 style="margin-bottom:24px;">Dự án nổi bật</h1>
-
-        <div class="project-card" id="stusmart">
-            <img class="portrait" src="stusmart.png" alt="StuSmart">
-            <div class="project-info">
-                <h2>StuSmart – Ứng dụng điểm danh</h2>
-                <p>Ứng dụng hỗ trợ giáo viên tạo mã QR cho lớp học, học sinh quét mã để điểm danh và đồng bộ dữ liệu qua
-                    Firebase. Giao diện hiện đại, trực quan và có chế độ xem danh sách theo ngày.</p>
-                <a href="#" class="btn">Xem chi tiết</a>
-            </div>
-        </div>
-
-        <div class="project-card" id="portfolio">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
-                alt="Portfolio">
-            <div class="project-info">
-                <h2>Portfolio cá nhân</h2>
-                <p>Website giới thiệu bản thân, kỹ năng và dự án cá nhân. Thiết kế hiện đại với hiệu ứng nền galaxy, hoạt
-                    ảnh mượt mà và tối ưu cho cả desktop lẫn mobile.</p>
-                <a href="#" class="btn">Xem chi tiết</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="https://images.unsplash.com/photo-1603791452906-bb3d5c0e6b33?q=80&w=1200&auto=format&fit=crop"
-                alt="SmartTasks">
-            <div class="project-info">
-                <h2>UTH SmartTasks</h2>
-                <p>Ứng dụng quản lý bài tập cho sinh viên UTH. Bao gồm tính năng đăng nhập, thêm bài tập, nhắc nhở
-                    deadline và giao diện được xây dựng bằng Jetpack Compose.</p>
-                <a href="#" class="btn">Xem chi tiết</a>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        &copy; 2025 MinHuynnn - Bảo lưu mọi quyền.
-    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

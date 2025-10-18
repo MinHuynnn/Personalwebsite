@@ -1,94 +1,121 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="vi">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>MinHuynnn Profile - Trang chủ</title>
+    <title>MinHuynnn Profile - Trang chu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="particles">
-        <span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
     </div>
-    <div class="container">
-        <header class="header card">
+    <div class="page-layout">
+        <aside class="sidebar card">
             <div class="brand">
-                <div class="logo">MH</div>
+                <div class="logo">H</div>
                 <div>
                     <div class="title">MinHuynnn Profile</div>
-                    <div class="kicker">Sinh viên</div>
+                    <div class="kicker">Sinh vien CNTT</div>
                 </div>
             </div>
-            <nav class="nav">
-                <a href="index.html" class="link-plain">Trang chủ</a>
-                <a href="projects.html" data-anim>Dự án</a>
-                <a href="contact.html" data-anim>Liên hệ</a>
-                <a href="projects.html" class="cta" data-anim>Xem dự án</a>
+            <nav class="icon-nav">
+                <a href="index.html" class="nav-icon active" aria-label="Trang chu" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5.5a.5.5 0 0 1-.5-.5V15h-4v6.5a.5.5 0 0 1-.5.5H4a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <span class="sr-only">Trang chu</span>
+                </a>
+                <a href="projects.html" class="nav-icon" aria-label="Du an" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M4.5 5.5A2.5 2.5 0 0 1 7 3h10a2.5 2.5 0 0 1 2.5 2.5V7H21a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1h.5zm13 0V7h-11V5.5A.5.5 0 0 1 7 5h10a.5.5 0 0 1 .5.5z" />
+                    </svg>
+                    <span class="sr-only">Du an</span>
+                </a>
+                <a href="contact.html" class="nav-icon" aria-label="Lien he" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 1.6v.27l8 5 8-5V6.6l-8 5-8-5z" />
+                    </svg>
+                    <span class="sr-only">Lien he</span>
+                </a>
+                <a href="projects.html#portfolio" class="nav-icon nav-icon-cta" aria-label="Xem du an" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2a1 1 0 0 1 .95.68l1.37 4.22 4.44.07a1 1 0 0 1 .59 1.8l-3.56 2.68 1.3 4.28a1 1 0 0 1-1.52 1.1L12 14.9l-3.57 2.93a1 1 0 0 1-1.52-1.1l1.3-4.28-3.56-2.68a1 1 0 0 1 .59-1.8l4.44-.07 1.37-4.22A1 1 0 0 1 12 2z" />
+                    </svg>
+                    <span class="sr-only">Xem du an</span>
+                </a>
             </nav>
-        </header>
+        </aside>
 
-        <main class="card">
-            <section class="hero">
-                <div class="hero-left">
-                    <div class="avatar">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop"
-                            alt="avatar">
-                    </div>
-                    <div class="intro">
-                        <div class="kicker">Xin chào, mình là</div>
-                        <div class="name">MinHuynnn</div>
-                        <div class="role">Sinh viên ngành Công nghệ thông tin</div>
-                    </div>
-
-                    <div class="chips">
-                        <div class="chip">HTML / CSS</div>
-                        <div class="chip">Java Spring Boot</div>
-                        <div class="chip">Python</div>
-                        <div class="chip">Kotlin / Jetpack Compose</div>
-                    </div>
-                </div>
-
-                <div class="hero-right">
-                    <h2 class="highlight">Xin chào, mình là MinHuynnn</h2>
-                    <p class="kicker">Mình xây dựng giao diện đẹp, mượt và tối ưu hiệu năng. Dưới đây là một vài dự án
-                        nổi bật và kỹ năng của mình.</p>
-
-                    <div class="btn-group">
-                        <a href="projects.html" class="btn">Xem dự án</a>
-                        <a href="contact.html" class="btn">Liên hệ</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="projects">
-                <h3>Một số dự án</h3>
-                <div class="projects-grid">
-                    <a href="projects.html#stusmart" class="project-item" data-anim>
-                        <img src="stusmart.png" alt="StuSmart" class="portrait">
-                        <div class="proj-meta">
-                            <h3>StuSmart</h3>
-                            <p class="muted">Ứng dụng quản lý học sinh</p>
+        <div class="content-area">
+            <main class="card">
+                <section class="hero">
+                    <div class="hero-left">
+                        <div class="avatar">
+                            <img src="images/avt.jpg"
+                                alt="avatar">
                         </div>
-                    </a>
-
-                    <a href="projects.html#portfolio" class="project-item" data-anim>
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
-                            alt="Portfolio">
-                        <div class="proj-meta">
-                            <h3>Portfolio</h3>
-                            <p class="muted">Giao diện cá nhân responsive</p>
+                        <div class="intro">
+                            <div class="kicker">Xin chao, minh la</div>
+                            <div class="name">MinHuynnn</div>
+                            <div class="role">Sinh vien nganh Cong nghe thong tin</div>
                         </div>
-                    </a>
-                </div>
-            </section>
-        </main>
 
-        <footer class="footer card">
-            &copy; 2025 MinHuynnn
-        </footer>
+                        <div class="chips">
+                            <div class="chip">HTML / CSS</div>
+                            <div class="chip">Java Spring Boot</div>
+                            <div class="chip">Python</div>
+                            <div class="chip">Kotlin / Jetpack Compose</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-right">
+                        <h2 class="highlight">Xin chao, minh la MinHuynnn</h2>
+                        <p class="kicker"> Duoi day la mot vai du
+                            an noi bat va ky nang cua minh.</p>
+
+                        <div class="btn-group">
+                            <a href="projects.html" class="btn">Xem du an</a>
+                            <a href="contact.html" class="btn">Lien he</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projects">
+                    <h3>Mot so du an</h3>
+                    <div class="projects-grid">
+                        <a href="projects.html#stusmart" class="project-item" data-anim>
+                            <img src="images/stusmart.jpg" alt="StuSmart" class="portrait">
+                            <div class="proj-meta">
+                                <h3>StuSmart</h3>
+                                <p class="muted">Ung dung quan ly hoc sinh</p>
+                            </div>
+                        </a>
+
+                        <a href="projects.html#portfolio" class="project-item" data-anim>
+                            <img src="images/keobuabao.jpg"
+                                alt="Game-Rocks-Paper-Scissors">
+                            <div class="proj-meta">
+                                <h3>Game-Rocks-Paper-Scissors</h3>
+                                <p class="muted">Mot game đon gian ve tro choi keo bua bao</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer card">
+                &copy;- MinHuynnn -
+            </footer>
+        </div>
     </div>
 
     <script src="script.js"></script>

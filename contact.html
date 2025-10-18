@@ -4,52 +4,118 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>MinHuynnn - Liên hệ</title>
+    <title>MinHuynnn - Lien he</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header card">
+    <div class="particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="page-layout">
+        <aside class="sidebar card">
             <div class="brand">
-                <div class="logo">MH</div>
+                <div class="logo">H</div>
                 <div>
                     <div class="title">MinHuynnn Profile</div>
-                    <div class="kicker">Liên hệ</div>
+                    <div class="kicker">Lien he</div>
                 </div>
             </div>
-            <nav class="nav">
-                <a href="index.html" data-anim>Trang chủ</a>
-                <a href="projects.html" data-anim>Dự án</a>
-                <a href="contact.html" class="link-plain">Liên hệ</a>
+            <nav class="icon-nav">
+                <a href="index.html" class="nav-icon" aria-label="Trang chu" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5.5a.5.5 0 0 1-.5-.5V15h-4v6.5a.5.5 0 0 1-.5.5H4a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <span class="sr-only">Trang chu</span>
+                </a>
+                <a href="projects.html" class="nav-icon" aria-label="Du an" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M4.5 5.5A2.5 2.5 0 0 1 7 3h10a2.5 2.5 0 0 1 2.5 2.5V7H21a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1h.5zm13 0V7h-11V5.5A.5.5 0 0 1 7 5h10a.5.5 0 0 1 .5.5z" />
+                    </svg>
+                    <span class="sr-only">Du an</span>
+                </a>
+                <a href="contact.html" class="nav-icon active" aria-label="Lien he" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 1.6v.27l8 5 8-5V6.6l-8 5-8-5z" />
+                    </svg>
+                    <span class="sr-only">Lien he</span>
+                </a>
+                <a href="projects.html#portfolio" class="nav-icon nav-icon-cta" aria-label="Xem du an" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2a1 1 0 0 1 .95.68l1.37 4.22 4.44.07a1 1 0 0 1 .59 1.8l-3.56 2.68 1.3 4.28a1 1 0 0 1-1.52 1.1L12 14.9l-3.57 2.93a1 1 0 0 1-1.52-1.1l1.3-4.28-3.56-2.68a1 1 0 0 1 .59-1.8l4.44-.07 1.37-4.22A1 1 0 0 1 12 2z" />
+                    </svg>
+                    <span class="sr-only">Xem du an</span>
+                </a>
             </nav>
-        </header>
+        </aside>
 
-        <main class="card">
-            <a href="index.html" class="link-plain" data-anim>&larr; Quay lại</a>
+        <div class="content-area">
+            <main class="card">
+                <a href="index.html" class="nav-icon nav-icon-inline" aria-label="Ve trang chu" data-anim>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M15.75 4.75 8.5 12l7.25 7.25-1.5 1.5L5.5 12l8.75-8.75 1.5 1.5z" />
+                    </svg>
+                    <span class="sr-only">Ve trang chu</span>
+                </a>
 
-            <h1 style="margin-top:12px;color:#e6b0ff">Liên hệ</h1>
-            <p class="kicker">Gửi tin nhắn cho mình và mình sẽ phản hồi sớm nhất.</p>
+                <h1 style="margin-top:12px;color:#e6b0ff">Contact</h1>
+                <p class="kicker">Gui tin nhan cho minh va minh se phan hoi som nhat.</p>
 
-            <form
-                onsubmit="event.preventDefault(); alert('Cảm ơn! Tin nhắn của bạn đã được gửi.'); this.reset();"
-                style="margin-top:18px;display:grid;gap:10px;max-width:680px">
-                <input placeholder="Tên" required
-                    style="padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:inherit">
-                <input placeholder="Email" required type="email"
-                    style="padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:inherit">
-                <textarea placeholder="Nội dung" required rows="6"
-                    style="padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:inherit"></textarea>
-                <div>
-                    <button class="btn" type="submit">Gửi</button>
-                    <a href="index.html" class="btn" style="margin-left:10px" data-anim>Về trang chính</a>
+                <form
+                    onsubmit="event.preventDefault(); alert('Cam on! Tin nhan cua ban da duoc gui.'); this.reset();"
+                    style="margin-top:18px;display:grid;gap:10px;max-width:680px">
+                    <input placeholder="Ten" required
+                        style="padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:inherit">
+                    <input placeholder="Email" required type="email"
+                        style="padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:inherit">
+                    <textarea placeholder="Noi dung" required rows="6"
+                        style="padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:inherit"></textarea>
+                    <div>
+                    <div class="form-actions">
+                        <button class="btn" type="submit">Gui</button>
+                        <a href="index.html" class="btn btn-ghost" data-anim>Ve trang chinh</a>
+                    </div>
                 </div>
             </form>
-        </main>
 
-        <footer class="footer card">
-            Email: huy012230@gmail.com - &copy; 2025 MinHuynnn
-        </footer>
+                <div class="contact-links">
+                    <a class="facebook" href="https://www.facebook.com/minhhuy.nguyenminhhuy.10" target="_blank"
+                        rel="noopener noreferrer" data-anim aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path   
+                                d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.63-1.3 1.3V11h2.2l-.35 3h-1.85v7A10 10 0 0 0 22 12z" />
+                        </svg>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/min_huynn/" target="_blank"
+                        rel="noopener noreferrer" data-anim aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm6-2.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0z" />
+                        </svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a class="github" href="https://github.com/MinHuynnn" target="_blank" rel="noopener noreferrer"
+                        data-anim aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.57.11.78-.25.78-.56v-1.98c-3.2.7-3.88-1.6-3.88-1.6-.53-1.35-1.3-1.71-1.3-1.71-1.05-.7.08-.69.08-.69 1.16.08 1.76 1.19 1.76 1.19 1.04 1.77 2.71 1.26 3.38.96.1-.76.4-1.26.74-1.54-2.55-.3-5.22-1.27-5.22-5.63 0-1.25.45-2.27 1.18-3.08-.12-.3-.52-1.48.12-3.09 0 0 .97-.32 3.18 1.18a10.9 10.9 0 0 1 5.76 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.61.24 2.8.12 3.09.73.81 1.17 1.83 1.17 3.08 0 4.38-2.68 5.34-5.24 5.63.42.37.8 1.09.8 2.2v3.22c0 .31.2.68.78.56A11.5 11.5 0 0 0 12 .5z" />
+                        </svg>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                </div>
+            </main>
+
+            <footer class="footer card">
+                Email: huy012230@gmail.com - &copy; 2025 MinHuynnn
+            </footer>
+        </div>
     </div>
 
     <script src="script.js"></script>
