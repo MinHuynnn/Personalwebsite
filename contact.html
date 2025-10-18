@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MinHuynnn - Liên hệ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header card">
+            <div class="brand">
+                <div class="logo">MH</div>
+                <div>
+                    <div class="title">MinHuynnn Profile</div>
+                    <div class="kicker">Liên hệ</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="index.html" data-anim>Trang chủ</a>
+                <a href="projects.html" data-anim>Dự án</a>
+                <a href="contact.html" class="link-plain">Liên hệ</a>
+            </nav>
+        </header>
+
+        <main class="card">
+            <a href="index.html" class="link-plain" data-anim>&larr; Quay lại</a>
+
+            <h1 style="margin-top:12px;color:#e6b0ff">Liên hệ</h1>
+            <p class="kicker">Gửi tin nhắn cho mình và mình sẽ phản hồi sớm nhất.</p>
+
+            <form
+                onsubmit="event.preventDefault(); alert('Cảm ơn! Tin nhắn của bạn đã được gửi.'); this.reset();"
+                style="margin-top:18px;display:grid;gap:10px;max-width:680px">
+                <input placeholder="Tên" required
+                    style="padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:inherit">
+                <input placeholder="Email" required type="email"
+                    style="padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:inherit">
+                <textarea placeholder="Nội dung" required rows="6"
+                    style="padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:inherit"></textarea>
+                <div>
+                    <button class="btn" type="submit">Gửi</button>
+                    <a href="index.html" class="btn" style="margin-left:10px" data-anim>Về trang chính</a>
+                </div>
+            </form>
+        </main>
+
+        <footer class="footer card">
+            Email: huy012230@gmail.com - &copy; 2025 MinHuynnn
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
