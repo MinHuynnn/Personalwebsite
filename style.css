@@ -1090,3 +1090,91 @@ body.page-exit-active {
         transform: translateY(0);
     }
 }
+/* --- Hiệu ứng vòng tròn kỹ năng nằm ngang --- */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* mỗi item kỹ năng */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Vòng tròn kỹ năng ===== */
+.skill-circle {
+    --percent: 80;
+    --skill-color: #6366f1;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d0e1a;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+    overflow: hidden;
+}
+
+/* Viền phát sáng bên ngoài */
+.skill-circle::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    padding: 3px;
+    background: conic-gradient(var(--skill-color) calc(var(--percent) * 1%),
+            rgba(255, 255, 255, 0.05) 0%);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 6px), black 0);
+    mask: radial-gradient(farthest-side, transparent calc(100% - 6px), black 0);
+    animation: glowRotate 4s linear infinite;
+}
+
+/* Tạo hiệu ứng xoay quanh viền */
+@keyframes glowRotate {
+    0% {
+        transform: rotate(0deg);
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.6);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        filter: brightness(1);
+    }
+}
+
+/* Phần trăm nằm giữa */
+.skill-circle span {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Tên kỹ năng */
+.skill-item span.skill-name {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Hiệu ứng hover */
+.skill-circle:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px var(--skill-color);
+    transition: 0.4s;
+}
